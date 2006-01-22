@@ -26,6 +26,8 @@ class ATConfiguration
 	var $encodingMap = array();
 	var $base_dir;
 
+	var $objectWrapper; // not be used now. but later.
+
 	/**
 	 *
 	 * @access public
