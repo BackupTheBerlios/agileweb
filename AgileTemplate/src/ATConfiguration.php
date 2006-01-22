@@ -7,9 +7,10 @@ require_once(dirname(__FILE__)."/ATCache.php");
 /**
  * Copyright (c) AgileSoft.cn
  * @author Binzy
+ * @package AgileTemplate
  * Configuration
  * <example>
- * $config = new AgileTemplateConfiguration();
+ * $config = new ATConfiguration();
  * $config->setDirectoryForTemplateLoading("/wwwroot/tpl");
  * $tpl = $config->getTemplate("agilesoft.php");
  * $root = array("person"=>"Binzy Wu");
@@ -18,7 +19,7 @@ require_once(dirname(__FILE__)."/ATCache.php");
  * </example>
  *
  */
-class AgileTemplateConfiguration
+class ATConfiguration
 {
 
 	var $cache;
@@ -30,7 +31,7 @@ class AgileTemplateConfiguration
 	 * @access public
 	 *
 	 */
-	function AgileTemplateConfiguration($loader = '')
+	function ATConfiguration($loader = '')
 	{
 		//
 		$this->_init();
@@ -84,6 +85,11 @@ class AgileTemplateConfiguration
 	}
 
 
+	/**
+	 *
+	 * @access private
+	 *
+	 */
 	function _loadBuiltinEncodingMap()
 	{
         $this->encodingMap["ar"] = "ISO-8859-6";

@@ -5,11 +5,9 @@ require_once(dirname(__FILE__)."/AgileTemplate.php");
 require_once(dirname(__FILE__)."/ATFileLoader.php");
 
 /**
- *
- * 
- * $Id: ATCache.php,v 1.1 2006/01/20 15:43:27 binzywu Exp $
- * 
- * Copyright (c) Binzy Wu
+ * Copyright (c) AgileSoft.cn
+ * @author Binzy
+ * @package AgileTemplate
  *
  */
 class ATCache
@@ -49,7 +47,7 @@ class ATCache
 		// 这里会使用上CachedTemplate
 
 
-		return new AgTemplate($tpl_name, $source, &$this->configuration, $encoding, $local);
+		return new AgileTemplate($tpl_name, $source, &$this->configuration, $encoding, $local);
 	}
 
 	function setConfiguration(&$configuration)

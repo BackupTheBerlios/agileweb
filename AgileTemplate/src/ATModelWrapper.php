@@ -1,6 +1,10 @@
 <?
 
-
+/**
+ *
+ *
+ * @abstract
+ */
 class ATModelWrapper
 {
 	//

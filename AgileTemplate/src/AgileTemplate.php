@@ -1,7 +1,13 @@
 <?
 
 require_once(dirname(__FILE__)."/ATBuiltIn.php");
-
+/**
+ * Copyright (c) AgileSoft.cn
+ * @author Binzy
+ * @package AgileTemplate
+ * The template class
+ *
+ */
 class AgileTemplate
 {
 
@@ -11,6 +17,15 @@ class AgileTemplate
 
 	var $content = "";
 
+	/**
+	 * construction
+	 * @access public
+	 * @param string $name The name of the templates
+	 * @param string $source the template source
+	 * @param ATConfiguration $cfg the agile template Configuration
+	 * @param string $encoding, such as utf-8
+	 * @param string $local
+	 */
 	function AgileTemplate($name, $source, &$cfg, $encoding = "", $local = "")
 	{
 		//
@@ -19,7 +34,13 @@ class AgileTemplate
 		$this->encoding = $encoding;
 	}
 
-	function process($root)
+	/**
+	 * @access public
+	 * @param array $root, the data root
+	 * @return string the processed template
+	 *
+	 */
+	function process($root = array())
 	{
 		//process
 

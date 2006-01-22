@@ -4,6 +4,11 @@
 
 require_once(dirname(__FILE__)."/ATLoader.php");
 
+/**
+ * Copyright (c) AgileSoft.cn
+ * @author Binzy
+ * @package AgileTemplate
+ */
 class ATFileLoader extends ATLoader
 {
 
