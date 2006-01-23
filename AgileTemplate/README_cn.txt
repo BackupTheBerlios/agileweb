@@ -9,7 +9,7 @@
 和PHP一样强大
 
 4. 更多信息?
-请阅读文档, 地址在: http://www.agilesoft.cn/agiletemplate/doc/manual/
+请阅读文档, 地址在: http://www.agilesoft.cn/agiletemplate/doc/
 
 Thanks,
 Binzy Wu
