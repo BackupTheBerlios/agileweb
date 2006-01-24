@@ -25,6 +25,7 @@ class ATBuiltIn
 		if (phpversion() > "5")
 		{
 			//
+			include_once(dirname(__FILE__)."/ExtensionFilter.php");
 			ATBuiltIn::load4PHP5();
 		}
 		else // php4
@@ -57,6 +58,11 @@ class ATBuiltIn
 	function load4PHP5()
 	{
 		//
+		$files = new ExtensionFilter(new DirectoryIterator(dirname(__FILE__)."/builtin"), 'php');
+		foreach($files as $file)
+		{
+			//
+		}
 	}
 
 }
