@@ -1,0 +1,9 @@
+Thanks a lot to use diggMore.
+
+#INSTALL#
+1. Config your php include path, add your Zend Framework in.
+2. upload src folder to web root path
+3. Browse /misc/install.php
+4. /admin.php
+5. 
+
