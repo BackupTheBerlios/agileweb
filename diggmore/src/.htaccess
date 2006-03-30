@@ -1,0 +1,7 @@
+# for diggmore 
+# $Id: .htaccess,v 1.1 2006/03/30 13:42:44 binzywu Exp $
+
+RewriteEngine on 
+RewriteRule !\.(js|ico|gif|jpg|png|css)$ index.php
+
+#

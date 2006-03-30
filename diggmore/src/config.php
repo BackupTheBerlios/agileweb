@@ -15,6 +15,12 @@ $DIGGCONFIG['db']['dbname'] = 'diggmore';
 // 
 
 
+/**
+ * 
+ * DiggmoreConfig::instance()->get($index);
+ *
+ *
+ */
 class DiggmoreConfig implements ArrayAccess
 {
 	
@@ -60,6 +66,18 @@ class DiggmoreConfig implements ArrayAccess
 		return self::$_instance;
 	}
 
+	/**
+	 *
+	 * helper method
+	 *
+	 */
+	public function get($index)
+	{
+		return $this->_config[$index]; 
+	}
+
 }
+
+
 
 ?>
