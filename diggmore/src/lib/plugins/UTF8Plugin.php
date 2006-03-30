@@ -2,7 +2,7 @@
 
 require_once("Zend/Controller/Plugin/Abstract.php");
 
-class TestPlugin extends Zend_Controller_Plugin_Abstract
+class UTF8Plugin extends Zend_Controller_Plugin_Abstract
 {
 	/**
 	 * Called before Zend_Controller_Front begins evaluating the
@@ -12,7 +12,6 @@ class TestPlugin extends Zend_Controller_Plugin_Abstract
 	 */
 	public function routeStartup()
 	{
-		//print 'i am test plugin';
 	}
 
 	/**
@@ -60,6 +59,7 @@ class TestPlugin extends Zend_Controller_Plugin_Abstract
 	 */
 	public function preDispatch($action)
 	{
+		header("Content-Type: text/html; charset=UTF-8");
 	    return $action;
 	}
 
