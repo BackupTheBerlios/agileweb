@@ -1,5 +1,9 @@
 <?
 
+
+
+
+
 class IndexController extends DiggmoreAction 
 { 
 	function indexAction() 

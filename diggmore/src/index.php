@@ -1,7 +1,7 @@
 <?
 
 
-// $Id: index.php,v 1.3 2006/03/30 14:30:08 binzywu Exp $
+// $Id: index.php,v 1.4 2006/04/02 13:29:25 binzywu Exp $
 
 require_once 'Zend.php';  
 require_once 'lib/ext/DiggmoreFront.php';  
@@ -19,7 +19,7 @@ $front->registerPlugin(new TestPlugin());
 
 
 $view = new Zend_View; 
-$view->setScriptPath('./app'); 
+$view->setScriptPath('./view'); 
 Zend::register('view', $view); 
 
 $front->dispatch(); 
