@@ -25,6 +25,9 @@ class UserController extends DiggmoreController
 	public function regformAction()
 	{
 		// show reg form
+		$view = Zend::registry("view");
+		$view->title = "User Registration";
+		print $view->render('user/regform.php');
 	}
 
 	public function regAction()

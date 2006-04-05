@@ -2,7 +2,7 @@
 include_once(dirname(__FILE__)."/../global/header.php");
 ?>
 <div>
-	<p>我是policy</p>
+	<p>regform</p>
 	<input type="button" value="agree" onclick="window.location='/user/regform';" />
 </div>
 <?
