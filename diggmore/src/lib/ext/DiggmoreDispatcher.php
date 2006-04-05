@@ -1,4 +1,4 @@
-<?
+<?php
 
 
 require_once 'Zend/Controller/Dispatcher.php'; 

@@ -1,7 +1,7 @@
-<?
+<?php
 
 
-// $Id: index.php,v 1.4 2006/04/02 13:29:25 binzywu Exp $
+// $Id: index.php,v 1.5 2006/04/05 14:56:07 nio_xiao Exp $
 
 require_once 'Zend.php';  
 require_once 'lib/ext/DiggmoreFront.php';  

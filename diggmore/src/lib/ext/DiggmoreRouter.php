@@ -1,4 +1,4 @@
-<?
+<?php
 
 /** Zend_Controller_Router_Interface */ 
 require_once 'Zend/Controller/Router/Interface.php'; 
