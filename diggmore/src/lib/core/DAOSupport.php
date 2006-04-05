@@ -3,6 +3,8 @@
 abstract class DAOSupport
 {
 	//
+	
+
 
 }
 

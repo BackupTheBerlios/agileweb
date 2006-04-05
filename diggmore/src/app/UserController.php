@@ -33,7 +33,7 @@ class UserController extends DiggmoreController
 	public function regAction()
 	{
 		// register the user
-
+		
 	}
 
 
