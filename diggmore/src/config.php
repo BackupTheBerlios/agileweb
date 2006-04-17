@@ -1,12 +1,20 @@
 <?php
 
 
+
 // DB
 $DIGGCONFIG['db']['adapter'] = 'pdoMysql';
 $DIGGCONFIG['db']['host'] = '127.0.0.1';
 $DIGGCONFIG['db']['username'] = 'root';
 $DIGGCONFIG['db']['password'] = '';
 $DIGGCONFIG['db']['dbname'] = 'diggmore';
+
+// front
+$DIGGCONFIG['front']['sub_directory'] = 'diggmore';
+$DIGGCONFIG['front']['default_front'] = 'common';
+$DIGGCONFIG['front']['frontfile']['xml'] = 'xml';
+$DIGGCONFIG['front']['frontfile']['api'] = 'api';
+$DIGGCONFIG['front']['frontfile']['webservice'] = 'webservice';
 
 // View Path
 

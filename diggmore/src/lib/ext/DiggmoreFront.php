@@ -1,9 +1,9 @@
 <?php
 
-require_once 'Zend/Controller/Front.php'; 
+//require_once 'Zend/Controller/Front.php'; 
 
 
-class DiggmoreFront extends Zend_Controller_Front
+class DiggmoreFront
 {
 	// do nothing now
     /**
@@ -15,7 +15,33 @@ class DiggmoreFront extends Zend_Controller_Front
 
 	public function dispatch()
 	{
-		parent::dispatch();
+
+		include_once($this->getFrontFile());
+
+	}
+
+	private function getFrontFile()
+	{
+		//
+        $path = $_SERVER['REQUEST_URI'];
+        if (strstr($path, '?')) {
+            $path = substr($path, 0, strpos($path, '?'));
+        }
+        $path = explode('/', trim($path, '/'));
+
+		$front_config = DiggmoreConfig::instance()->get('front');
+
+		if (isset($front_config['frontfile'][$path[0]]))
+		{
+			//
+			$front = $front_config['frontfile'][$path[0]];
+		}
+		else
+		{
+			$front = $front_config['default_front'];
+		}
+
+		return $front_file = DIGGMORE_ROOT.'/_'.$front.'.php';
 	}
 
 	/**
@@ -31,7 +57,6 @@ class DiggmoreFront extends Zend_Controller_Front
 
         return self::$_instance;
 	}
-
 }
 
 ?>
